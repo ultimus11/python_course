@@ -38,11 +38,29 @@ python_course_for_beginners/
 ├── requirements.txt          # Required Python libraries
 ├── modules/                  # Course content
 │   ├── basics/               # Beginner-level modules
+│   │   ├── intro.py          # Introduction to Python
+│   │   ├── syntax.py         # Python syntax and comments
+│   │   └── variables.py      # Variables and data types
 │   ├── intermediate/         # Intermediate-level modules
+│   │   ├── functions.py      # Functions in Python
+│   │   ├── modules.py        # Modules and packages
+│   │   └── file_handling.py  # File handling techniques
 │   ├── advanced/             # Advanced-level modules
+│   │   ├── oop.py            # Object-Oriented Programming
+│   │   ├── error_handling.py # Error handling in Python
+│   │   └── libraries.py      # Working with libraries
 │   └── projects/             # Capstone projects
+│       ├── calculator/       # Basic calculator project
+│       ├── todo_app/         # To-do list application
+│       ├── data_analysis/    # Data analysis with Pandas
+│       └── tic_tac_toe/      # Simple game: Tic-Tac-Toe
 ├── examples/                 # Example files and data
+│   ├── data.csv              # Sample CSV data
+│   └── config.json           # Sample JSON configuration
 └── tests/                    # Scripts to test your knowledge
+    ├── test_basics.py        # Test scripts for basics
+    ├── test_intermediate.py  # Test scripts for intermediate topics
+    └── test_advanced.py      # Test scripts for advanced topics
 ```
 
 ---
