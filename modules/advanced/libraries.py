@@ -21,7 +21,7 @@ def fetch_website_content(url):
         return f"Error: {e}"
 
 # Example usage
-print(f"Area of circle with radius 5: {calculate_area_of_circle(5)}")
+print(f"Area of the circle with radius 5: {calculate_area_of_circle(5)}")
 print(f"Random numbers: {generate_random_numbers(5)}")
 
 website_content = fetch_website_content("https://www.example.com")
