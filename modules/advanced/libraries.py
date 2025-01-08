@@ -20,9 +20,10 @@ def fetch_website_content(url):
     except requests.RequestException as e:
         return f"Error: {e}"
 
-# Example usage
-print(f"Area of the circle with radius 5: {calculate_area_of_circle(5)}")
-print(f"Random numbers: {generate_random_numbers(5)}")
+if __name__ == "__main__":
+    # Example usage
+    print(f"Area of the circle with radius 5: {calculate_area_of_circle(5)}")
+    print(f"Random numbers: {generate_random_numbers(5)}")
 
-website_content = fetch_website_content("https://www.example.com")
-print(website_content)  # Output will depend on the website's content
+    website_content = fetch_website_content("https://www.example.com")
+    print(website_content)  # Output will depend on the website's content
