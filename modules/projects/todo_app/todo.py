@@ -31,6 +31,7 @@ def show_menu():
     print("3. Mark Task as Completed")
     print("4. Delete Task")
     print("5. Exit")
+    print("Thanks")
 
 # View tasks
 @log_action("Viewing Tasks")
