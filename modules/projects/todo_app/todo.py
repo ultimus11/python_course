@@ -18,7 +18,7 @@ def require_tasks(func):
     @wraps(func)
     def wrapper(tasks, *args, **kwargs):
         if not tasks:
-            print("\nNo tasks available. Please add tasks first.")
+            print("\nTasks not available. Please add tasks first.")
             return
         return func(tasks, *args, **kwargs)
     return wrapper
