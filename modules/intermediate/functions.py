@@ -52,3 +52,6 @@ def safe_divide(a, b):
         return a / b
     except ZeroDivisionError:
         return "Cannot divide by zero"
+
+if __name__=="__main__":
+    print(add_numbers(3, 5))  # Output: 8
