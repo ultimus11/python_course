@@ -50,6 +50,7 @@ def safe_divide(a, b):
     """Safely divides a by b, handling ZeroDivisionError."""
     try:
         # Try to divide a by b
+        time.sleep(2)
         print(a/b)
         return a / b
     except ZeroDivisionError:
