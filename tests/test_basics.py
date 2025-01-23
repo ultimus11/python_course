@@ -138,6 +138,17 @@ class TestVariablesModule(unittest.TestCase):
             unpacking_variables()
             output = buf.getvalue()
         self.assertIn("Unpacked Values - a: 1, b: 2, c: 3", output, "unpacking_variables function failed")
+    
+    def test_naming_conventions(self):
+        """
+        Test naming_conventions function output.
+        """
+        with StringIO() as buf, redirect_stdout(buf):
+            naming_conventions()
+            output = buf.getvalue()
+        self.assertIn("Variable Name: my_variable", output, "naming_conventions function failed")
+        self.assertIn("Function Name: my_function", output, "naming_conventions function failed")
+        self.assertIn("Class Name: MyClass", output, "naming_conventions function failed")  
 
 
 if __name__ == "__main__":
