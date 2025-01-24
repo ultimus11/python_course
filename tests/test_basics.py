@@ -148,7 +148,16 @@ class TestVariablesModule(unittest.TestCase):
             output = buf.getvalue()
         self.assertIn("Variable Name: my_variable", output, "naming_conventions function failed")
         self.assertIn("Function Name: my_function", output, "naming_conventions function failed")
-        self.assertIn("Class Name: MyClass", output, "naming_conventions function failed")  
+        self.assertIn("Class Name: MyClass", output, "naming_conventions function failed")
+    
+    def test_input_example(self):
+        """
+        Test input_example function output.
+        """
+        with StringIO() as buf, redirect_stdout(buf):
+            input_example()
+            output = buf.getvalue()
+        self.assertIn("Enter your name:", output, "input_example function failed")
 
 
 if __name__ == "__main__":
