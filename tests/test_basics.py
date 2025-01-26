@@ -157,7 +157,7 @@ class TestVariablesModule(unittest.TestCase):
         with StringIO() as buf, redirect_stdout(buf):
             input_example()
             output = buf.getvalue()
-        self.assertIn("Enter your name:", output, "input_example function failed")
+        self.assertIn("please Enter your name:", output, "input_example function failed")
 
 
 if __name__ == "__main__":
