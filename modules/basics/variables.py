@@ -122,6 +122,15 @@ def unpacking_variables():
     a, b, c = numbers
     print(f"Unpacked Values - a: {a}, b: {b}, c: {c}")
 
+def input_example():
+    """
+    Demonstrates how to take user input in Python.
+    """
+    print("\n8. Input Example:")
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    print(f"Name: {name}, Age: {age}")
+
 
 if __name__ == "__main__":
     print("Welcome to Python Variables and Data Types!")
